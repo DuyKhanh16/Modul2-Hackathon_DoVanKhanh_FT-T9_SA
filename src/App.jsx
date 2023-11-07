@@ -142,14 +142,14 @@ const reset=()=>{
 
   return (
     <div>
-      <div className='nav'>To Spend {200000000000-tatolMonney} You Have a Lot of money</div>
+      <div className='nav'>To Spend {200000000000-tatolMonney}$ You Have a Lot of money</div>
       <div className='product'>
         {product.map((item, index) => {
           return (
             <div className='item' key={index}>
               <img style={{marginTop:20}} src={item.img} width={250} height={300} />
               <p style={{fontSize:25}}>{item.name}</p>
-              <p style={{fontSize:20,fontWeight:700,color:"red"}}>{item.price}</p>
+              <p style={{fontSize:20,fontWeight:700,color:"red"}}>{item.price}$</p>
               <br />
               <button className='button'onClick={()=>pre(item.id)}>Interest</button>
               <span style={{marginLeft:20,marginRight:20}}>{item.quantity}</span>
@@ -170,7 +170,7 @@ const reset=()=>{
                     </div>   
                     })}
                 <div className="sumMoney">
-                    <p style={{fontSize:20,fontWeight:700}}>Tổng số tiền là:{tatolMonney}</p>
+                    <p style={{fontSize:20,fontWeight:700}}>Tổng số tiền là:{tatolMonney}$</p>
                     <button style={{backgroundColor:'yellow',borderRadius:10}} onClick={reset}>Làm mới giỏ hàng</button>
                 </div>
             </div>
