@@ -75,7 +75,7 @@ export default function App() {
       quantity:0
     },
     {
-      name: "Boing 787",
+      name: "Boing-787",
       img:"https://www.rynek-lotniczy.pl//img/202305311635137879Dreamliner.jpg_678-443.jpg",
       id: uuid(),
       price: 20000000,
